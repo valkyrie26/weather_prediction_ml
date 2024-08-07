@@ -11,9 +11,13 @@ Different types of atmospheric data variables are mentioned such as H500, T850, 
 
 To import the dataset, you can either mount your google drive and have a folder containing the dataset in it (only the merged IMDAA_merged_1.08_1990_2020.nc file was imported here), or you can try to provide a downloadable drive link for the same. 
 
+## Original Code Source
+This project builds upon the code originally developed by the authors of the paper. The original code can be found in their GitHub repository:
+https://github.com/MASLABnitrkl/BharatBench
+
 ## Program Execution
 
-This project was run using Jupyter Notebooks on Google Colab (https://colab.research.google.com). The folder contains .ipynb files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
+This project This project was run using Jupyter Notebooks on Google Colab (https://colab.research.google.com). The folder contains .ipynb files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
 
 Libraries used are already included in the initial command block for installation. However, if you already have those installed and are running this code in an alternate application, feel free to delete those commands. Also, if the program needs to be executed as a .py file, remove the '!' in front of the pip statements in the first block as it is a syntax used on Colab and may not work in other enviroments, eg. terminal bash shell.
 
