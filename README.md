@@ -1,2 +1,24 @@
-# bharatbench_ml
-A study on Choudhury, A., Panda, J., &amp; Mukherjee, A. (2024). BharatBench: Dataset for data-driven weather forecasting over India. arXiv [Physics.Ao-Ph]. (http://arxiv.org/abs/2405.07534).
+## bharatbench_ml
+
+## Overview
+ 
+This is an ML study on the BharatBench dataset's performance for CNN and convLSTM, and trying to analyse and possibly improve on, the results of the research paper by Choudhury, A., Panda, J., &amp; Mukherjee, A. (2024). BharatBench: Dataset for data-driven weather forecasting over India. arXiv [Physics.Ao-Ph]. (http://arxiv.org/abs/2405.07534). 
+
+## Dataset
+The BharatBench dataset is a collection of meteorological data specifically prepared for AI/ML applications in weather forecasting over India. It includes atmospheric variables, surface variables, and constants derived from the IMDAA reanalysis datasets. The dataset is available for download on Kaggle in NETCDF format. It can be downloaded from https://www.kaggle.com/datasets/maslab/bharatbench
+
+Different types of atmospheric data variables are mentioned such as H500, T850, T2m, TP6h which can be chosen for a comparative study. In this study, we found T850 to have the best results (same as the original paper), and so the code reflects that, but it can be modified.
+
+To import the dataset, you can either mount your google drive and have a folder containing the dataset in it (only the merged IMDAA_merged_1.08_1990_2020.nc file was imported here), or you can try to provide a downloadable drive link for the same. 
+
+## Program Execution
+
+This project was run using Jupyter Notebooks on Google Colab (https://colab.research.google.com). The folder contains .ipynb files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
+
+To run the code, go to the 'Runtime' tab and click 'Run all'. Alternatively, each code block can be clicked to run separately by clicking the play button on the top-left side of each cell, making sure that the execution is sequential to avoid errors.
+
+Note: Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. Using too much GPU power by running the code too many times will do the same if you have free version of Colab as there is a daily usage limit
+
+## Evaluation Metrics
+
+The evaluation metrics used for analysis have been same as the original paper, RMSE (root mean squared error), MAE (mean absolute error), ACC (anomaly correction coefficient). Apart from these, the number of parameters trained, layer architecture and training loss curves can be observed for further analysis.
