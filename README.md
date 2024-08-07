@@ -15,6 +15,8 @@ To import the dataset, you can either mount your google drive and have a folder 
 
 This project was run using Jupyter Notebooks on Google Colab (https://colab.research.google.com). The folder contains .ipynb files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
 
+Libraries used are already included in the initial command block for installation. However, if you already have those installed and are running this code in an alternate application, feel free to delete those commands. Also, if the program needs to be executed as a .py file, remove the '!' in front of the pip statements in the first block as it is a syntax used on Colab and may not work in other enviroments, eg. terminal bash shell.
+
 To run the code, go to the 'Runtime' tab and click 'Run all'. Alternatively, each code block can be clicked to run separately by clicking the play button on the top-left side of each cell, making sure that the execution is sequential to avoid errors.
 
 Note: Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. Using too much GPU power by running the code too many times will do the same if you have free version of Colab as there is a daily usage limit
@@ -22,3 +24,19 @@ Note: Leaving the screen idle for a long time will cause Colab to pause and give
 ## Evaluation Metrics
 
 The evaluation metrics used for analysis have been same as the original paper, RMSE (root mean squared error), MAE (mean absolute error), ACC (anomaly correction coefficient). Apart from these, the number of parameters trained, layer architecture and training loss curves can be observed for further analysis.
+
+## Observations
+
+We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The ideal scenario by trying various values that we found were:
+
+CNN:
+learning rate: 1e-04
+activation type: 'selu'
+number of batches: 32
+drop rate for middle layer: 0.3
+
+convLSTM:
+learning rate: 1e-04
+activation type: 'selu'
+number of batches: 32
+drop rate for middle layer: 0.3
