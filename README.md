@@ -27,7 +27,7 @@ The evaluation metrics used for analysis have been same as the original paper, R
 
 ## Observations
 
-We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The ideal scenario by trying various values that we found were:
+We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The optimal scenario by found by our experimentation were:
 
 CNN:
 <br/>learning rate: 1e-04
