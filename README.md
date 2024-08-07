@@ -30,13 +30,13 @@ The evaluation metrics used for analysis have been same as the original paper, R
 We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The ideal scenario by trying various values that we found were:
 
 CNN:
-< br / >learning rate: 1e-04
-< br / >activation type: 'selu'
-< br / >number of batches: 32
-< br / >drop rate for middle layer: 0.3
+<br/>learning rate: 1e-04
+<br/>activation type: 'selu'
+<br/>number of batches: 32
+<br/>drop rate for middle layer: 0.3
 
 convLSTM:
-< br / >learning rate: 1e-04
-< br / >activation type: 'selu'
-< br / >number of batches: 32
-< br / >drop rate for middle layer: 0.3
+<br/>learning rate: 1e-04
+<br/>activation type: 'selu'
+<br/>number of batches: 32
+<br/>drop rate for middle layer: 0.3
