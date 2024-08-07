@@ -44,3 +44,6 @@ convLSTM:
 <br/>activation type: 'selu'
 <br/>number of batches: 32
 <br/>drop rate for middle layer: 0.3
+
+## Acknowledgements
+We would like to thank the authors of the original research paper for providing the foundational code and research that made this project possible.
