@@ -19,7 +19,7 @@ Libraries used are already included in the initial command block for installatio
 
 To run the code, go to the 'Runtime' tab and click 'Run all'. Alternatively, each code block can be clicked to run separately by clicking the play button on the top-left side of each cell, making sure that the execution is sequential to avoid errors.
 
-Note: Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. Using too much GPU power by running the code too many times will do the same if you have free version of Colab as there is a daily usage limit
+<u>Note:</u> Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. Using too much GPU power by running the code too many times will do the same if you have free version of Colab as there is a daily usage limit
 
 ## Evaluation Metrics
 
@@ -27,7 +27,7 @@ The evaluation metrics used for analysis have been same as the original paper, R
 
 ## Observations
 
-We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The optimal scenario found by our experimentation were:
+We tried fine-tuning the original CNN and convLSTM models provided by varying its hyperparameters and making changes to the model itself. The optimal scenario found by our experimentation was:
 
 CNN:
 <br/>learning rate: 1e-04
