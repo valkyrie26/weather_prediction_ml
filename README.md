@@ -17,13 +17,14 @@ https://github.com/MASLABnitrkl/BharatBench
 
 ## Program Execution
 
-This project This project was run using Jupyter Notebooks on Google Colab (https://colab.research.google.com). The folder contains .ipynb files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
+This project was run using Jupyter Notebooks on Google Colab. This repository contains iPython notebook files that are compatible and just need to be uploaded on the platform to run. Runtime requirements were set to a T4 GPU so that training does not take significant amount of time.
 
-Libraries used are already included in the initial command block for installation. However, if you already have those installed and are running this code in an alternate application, feel free to delete those commands. Also, if the program needs to be executed as a .py file, remove the '!' in front of the pip statements in the first block as it is a syntax used on Colab and may not work in other enviroments, eg. terminal bash shell.
+Libraries used are already included in the initial command block for installation and import. However, if you already have those installed and are running this code in an alternate application, feel free to delete those commands. Also, if the program needs to be executed as a .py file, remove the '!' in front of the pip statements in the first block as it is a syntax used on Colab and may not work in other enviroments, eg. terminal bash shell.
+The Dataset Preparation sections of the noteboobs might need modification depending on where you choose to source the dataset from. 
 
 To run the code, go to the 'Runtime' tab and click 'Run all'. Alternatively, each code block can be clicked to run separately by clicking the play button on the top-left side of each cell, making sure that the execution is sequential to avoid errors.
 
-<u>Note:</u> Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. Using too much GPU power by running the code too many times will do the same if you have free version of Colab as there is a daily usage limit
+<u>Note:</u> Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. If using the free-tier of Google Colab, it is advisable to use the resources wisely.
 
 ## Evaluation Metrics
 
