@@ -15,9 +15,9 @@ To import the dataset, you can either mount your google drive and have a folder 
 This project builds upon the code originally developed by the authors of the paper. The original code can be found in their GitHub repository:
 https://github.com/MASLABnitrkl/BharatBench
 
-## Notebook in this Project
+## Files in this Project
 3_CNN_BatchNormalization.ipynb is the notebook used for experimentation of using batch normalization in our CNN Model.
-3_CNN_Modified.ipynb is the noteboob used for further experimentation on the CNN and convLSTM models with modified model definition and various hyperparameters. This file contains the code for the best model found so far through experimentation and results
+3_CNN_Modified.ipynb is the main notebook used for further experimentation on the CNN and convLSTM models with modified model definition and various hyperparameters. This file contains the code for the best model found so far through experimentation and results.
 
 ## Program Execution
 
