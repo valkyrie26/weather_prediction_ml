@@ -25,13 +25,12 @@ This project was run using Jupyter Notebooks on Google Colab. This repository co
 
 Libraries used are already included in the initial command block for installation and import. However, if you already have those installed and are running this code in an alternate application, feel free to delete those commands. Also, if the program needs to be executed as a .py file, remove the '!' in front of the pip statements in the first block as it is a syntax used on Colab and may not work in other enviroments, eg. terminal bash shell.
 
-The Dataset Preparation sections of the noteboobs might need modification depending on where you choose to source the dataset from.
-3_CNN_BatchNormalization.ipynb requires mounting and then sourcing the data from a google drive location using the relative file path. Upload the dataset to a desired location on your google drive and update the file path in the code accordingly. To mount the drive successfully to Colab, various permissions need to be provided when the popup appears.
-3_CNN_Modified sources the data from a google drive location using a link and file id. Although the file id and the link provided already in the code might work, this article (https://safjan.com/download-data-google-drive-colab-gdown/) can be used as a starter on how to get the required sharable link and id to be used in the code if you choose to use the dataset from another drive location.
+The Dataset Preparation sections of the notebooks might need modification depending on where you choose to source the dataset from.
+3_CNN_BatchNormalization.ipynb requires mounting and then sourcing the data from a google drive location using the relative file path. Upload the dataset to a desired location on your google drive and update the file path in the code accordingly (The file used here is a merged dataset file called 'IMDAA_merged_1.08_1990_2020.nc', which should be outside the folders of the downloaded dataset). To mount the drive successfully to Colab, various permissions need to be provided when the popup appears, or attach the drive link for the location of your dataset as downloadable. 3_CNN_Modified sources the data from a google drive location using a link and file id. Although the file id and the link provided already in the code might work, this article (https://safjan.com/download-data-google-drive-colab-gdown/) can be used as a starter on how to get the required sharable link and id to be used in the code if you choose to use the dataset from another drive location.
 
 To run the code, go to the 'Runtime' tab and click 'Run all'. Alternatively, each code block can be clicked to run separately by clicking the play button on the top-left side of each cell, making sure that the execution is sequential to avoid errors.
 
-<u>Note:</u> Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. If using the free-tier of Google Colab, it is advisable to use the resources wisely.
+<u>Note:</u> Leaving the screen idle for a long time will cause Colab to pause and give a pop-up message. If using the free-tier of Google Colab, it is advisable to use the resources wisely as there is a daily GPU usage limit.
 
 ## Evaluation Metrics
 
